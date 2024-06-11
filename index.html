@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Home</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>UI/UX DESIGNER</p>
+                <h1>Hi!my name is <span>Kangli</span><br> from China</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-----------------------about---------------->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="aboout-col-1">
+                    <img src="images/">
+                </div>
+                <div class="aboout-col-2"></div>
+                <h1 class="sub-title">about me</h1>
+                <div class="tab-titles">
+                    <p class="tab-links" onclick="opentab('skills')">skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">experience</p>
+                    <p class="tab-links" onclick="opentab('education')">education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>ui/ux</span><br>design web</li>
+                        <li><span>ui/ux</span><br>design web</li>
+                        <li><span>ui/ux</span><br>design web</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2017.07.01-2017.08.30</span><br>Sales Assistant </li>
+                        <li><span>2021.06.01-2021.07.30</span><br>Marketing Assistant </li>
+                        <li><span>2021.08-2021.10</span><br>Chinese teacher for foreigners </li>
+                        <li><span>2022.8.15-2022.10.16</span><br>Sales </li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2017-2019</span><br>APPLIED SPANISH</li>
+                        <li><span>2019-2020</span><br>CULTURAL EXCHANGE</li>
+                        <li><span>2020-2022</span><br>MASTER'S DEGREE IN TOURISM MANAGEMENT AND PLANNING</li>
+                        <li><span>2022-2024</span><br>MASTER OF INFORMATION TECHNOLOGY IN BUSINESS INFORMATICS</li>
+                    </ul>
+                </div>
+                ------
+            </div>
+
+
+        </div>
+    </div>
+
+<!-----------------------services---------------->
+
+
+
+
+
+
+
+<script>
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+</script>
+</body>
+</html>
